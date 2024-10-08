@@ -1,6 +1,6 @@
 // Importing necessary page and react library
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // Initial commit by Dean Hans
 

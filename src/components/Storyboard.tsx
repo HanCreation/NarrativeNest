@@ -22,7 +22,7 @@ const Storyboard: React.FC = () => {
     <div
       className="min-h-screen flex flex-col bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url('/Background.png')`,
+        backgroundImage: `url('Background.png')`,
         backdropFilter: "blur(10px)",
       }}
     >
@@ -46,7 +46,7 @@ const Storyboard: React.FC = () => {
             Narrative Nest Storyboard Maker Demo
             </h1>
           <h1 className="text-center text-1xl font-bold text-brown-800">
-            Please generate your storyboard one by one since the Gradio API is limited
+            Please generate your image/frame one by one since the Gradio API is limited
           </h1>
           
         </div>
