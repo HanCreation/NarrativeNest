@@ -7,11 +7,8 @@ const Footer: React.FC = () => {
   return (
     <footer className="p-4 bg-glass2 backdrop-blur-xs text-center">
       <div className="text-xl font-bold mb-4">
-
-        
         {/* Back To Home Page */}
         <Link to="/">NARRATIVE NEST</Link>
-        
       </div>
       <div className="mb-4 text-sm">
         Powered by Stable Diffusion Lightning Gradio API
