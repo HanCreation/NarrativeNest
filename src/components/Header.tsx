@@ -1,7 +1,6 @@
 // Importing necessary page and react library
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faShareAlt } from "@fortawesome/free-solid-svg-icons";
 
 // Initial commit by Dean Hans
 
@@ -26,12 +25,6 @@ const Header: React.FC<HeaderProps> = ({ initialTitle, onTitleChange }) => {
   return (
     // Navigation bar (NavBar)
     <header className="p-4 bg-glass backdrop-blur-sm shadow-md flex items-center justify-center relative">
-      <div className="absolute left-4 flex items-center space-x-4">
-        {/* Dummy Hamburger Menu*/}
-        <button className="text-sm">
-          <FontAwesomeIcon icon={faBars} size="lg" />
-        </button>
-      </div>
 
       {/* Handling title changes based on user reference using called function beforehand */}
       <div className="text-center text-brown-800">
@@ -41,19 +34,6 @@ const Header: React.FC<HeaderProps> = ({ initialTitle, onTitleChange }) => {
           onChange={handleTitleChange}
           className="text-xl font-bold border-none outline-none bg-transparent text-center mx-auto"
         />
-      </div>
-
-      <div className="absolute right-4 flex items-center space-x-4">
-        {/* Dummy Share Button */}
-        <button className="text-sm">
-          <FontAwesomeIcon icon={faShareAlt} size="lg" />
-        </button>
-
-        {/* Dummy Export Button */}
-        <button className="bg-brown-500 text-white px-6 py-1 rounded-lg  font-semibold hover:bg-brown-600">
-          Export
-        </button>
-        <div className="w-8 h-8 bg-gray-300 rounded-full"></div>
       </div>
     </header>
     // Navigation Bar End

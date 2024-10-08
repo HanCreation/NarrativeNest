@@ -4,14 +4,12 @@ import Header from "./Header.tsx";
 import ImageCard from "./ImageCard";
 import Footer from "./Footer.tsx";
 import { Helmet } from "react-helmet";
-import { useUser } from "../contexts/user-context.tsx";
 
 const Storyboard: React.FC = () => {
   // Set Initial Storyboard Title and Base Prompt
-  const [storyboardTitle, setStoryboardTitle] = useState("UNNAMED STORYBOARD");
+  const [storyboardTitle, setStoryboardTitle] = useState("EDIT STORYBOARD TITLE");
   const [basePrompt, setBasePrompt] = useState("");
 
-  const user = useUser();
 
   // Change Storyboard Title Function
   const handleTitleChange = (newTitle: string) => {
@@ -43,6 +41,15 @@ const Storyboard: React.FC = () => {
 
       {/* Storyboard Maker Section */}
       <div className="flex-grow p-4">
+        <div>
+          <h1 className="text-center text-2xl font-bold text-brown-800">
+            Narrative Nest Storyboard Maker Demo
+            </h1>
+          <h1 className="text-center text-1xl font-bold text-brown-800">
+            Please generate your storyboard one by one since the Gradio API is limited
+          </h1>
+          
+        </div>
         <div className="p-4 flex flex-col items-center w-full">
           <div className="w-full max-w-screen-lg mb-4">
             {/* User Prompt Receiver */}
@@ -50,7 +57,7 @@ const Storyboard: React.FC = () => {
               type="text"
               value={basePrompt}
               onChange={(e) => setBasePrompt(e.target.value)}
-              placeholder="Enter base prompt"
+              placeholder="Enter base prompt to define your style"
               className="w-full p-2 border rounded mb-2"
             />
           </div>

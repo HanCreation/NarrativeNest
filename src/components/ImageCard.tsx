@@ -3,9 +3,6 @@ import React, { useEffect, useState } from "react";
 import { client } from "@gradio/client";
 import { FiArrowRight, FiEdit3 } from "react-icons/fi";
 import { ClipLoader } from "react-spinners";
-import { useUser } from "../contexts/user-context";
-import { addDoc, collection } from "firebase/firestore";
-import { db } from "../firebase/firebase-config";
 
 // Defines an interface for base prompt
 interface ImageCardProps {
@@ -20,8 +17,6 @@ const ImageCard: React.FC<ImageCardProps> = ({ basePrompt }) => {
   const [prompt, setPrompt] = useState("");
   // Storing generated images
   const [image, setImage] = useState<string | null>(null);
-
-  const user = useUser();
 
   // To indicate image generation is in progress
   const [loading, setLoading] = useState(false);
@@ -58,22 +53,6 @@ const ImageCard: React.FC<ImageCardProps> = ({ basePrompt }) => {
       setLoading(false);
     }
   };
-
-  useEffect(() => {
-
-    if(image ==  null) return;
-
-    const imageRequest = {
-      image: image,
-      basePrompt: basePrompt,
-      prompt: prompt,
-      notes: notes,
-      uid: user?.uid,
-    }
-
-    addDoc(collection(db, 'StoryBoards'),imageRequest) 
-
-  }, [image])
 
   // Returning image card
   return (
