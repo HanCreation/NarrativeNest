@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet";
 
 const Storyboard: React.FC = () => {
   // Set Initial Storyboard Title and Base Prompt
-  const [storyboardTitle, setStoryboardTitle] = useState("EDIT STORYBOARD TITLE");
+  const [storyboardTitle, setStoryboardTitle] = useState("TYPE YOUR TITLE HERE");
   const [basePrompt, setBasePrompt] = useState("");
 
 
