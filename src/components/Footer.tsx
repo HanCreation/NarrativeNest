@@ -11,16 +11,20 @@ const Footer: React.FC = () => {
         
         {/* Back To Home Page */}
         <Link to="/">NARRATIVE NEST</Link>
+        
+      </div>
+      <div className="mb-4 text-sm">
+        Powered by Stable Diffusion Lightning Gradio API
       </div>
       <div className="border-t border-brown-600 py-4">
-        <div className="text-sm mt-2">
-          &copy; 2024 <span className="mx-2">|</span>
-          <a href="/privacy" className="text-gray-700 hover:text-gray-900">
-            Privacy
+        <a href="" className="text-gray-700 font-bold hover:text-gray-900">
+            Full Application Github Source Code
           </a>
+        <div className="text-sm mt-2">
+          &copy; 2024 Narrative Nest
           <span className="mx-2">|</span>
-          <a href="/terms" className="text-gray-700 hover:text-gray-900">
-            Terms
+          <a className="text-gray-700 hover:text-gray-900">
+            Created for College Project
           </a>
         </div>
       </div>
