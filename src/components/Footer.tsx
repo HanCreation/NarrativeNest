@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
           &copy; 2024 Narrative Nest
           <span className="mx-2">|</span>
           <a className="text-gray-700 hover:text-gray-900">
-            Created for College Project
+            Created for College Group Project and Deployed by Han 2024
           </a>
         </div>
       </div>
