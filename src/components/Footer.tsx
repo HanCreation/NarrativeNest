@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
         Powered by Stable Diffusion Lightning Gradio API
       </div>
       <div className="border-t border-brown-600 py-4">
-        <a href="" className="text-gray-700 font-bold hover:text-gray-900">
+        <a href="https://github.com/HanCreation/narrative-nest" className="text-gray-700 font-bold hover:text-gray-900">
             Full Application Github Source Code
           </a>
         <div className="text-sm mt-2">
