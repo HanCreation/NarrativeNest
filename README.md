@@ -1,5 +1,7 @@
 # Narrative-Nest
-**This is a demo repository for main feature deployment, to see full version of the website please refer to [hancreation/narrative-nest](https://github.com/HanCreation/narrative-nest)**
+**This is a demo repository for main feature deployment, to see full version code of the website please refer to [hancreation/narrative-nest](https://github.com/HanCreation/narrative-nest)**
+
+Deployed by Han 2024
 
 ## Description
 
