@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet";
 
 const Storyboard: React.FC = () => {
   // Set Initial Storyboard Title and Base Prompt
-  const [storyboardTitle, setStoryboardTitle] = useState("TYPE YOUR TITLE HERE");
+  const [storyboardTitle, setStoryboardTitle] = useState("TYPE MOVIE TITLE HERE");
   const [basePrompt, setBasePrompt] = useState("");
 
 
@@ -43,7 +43,7 @@ const Storyboard: React.FC = () => {
       <div className="flex-grow p-4">
         <div>
           <h1 className="text-center text-2xl font-bold text-brown-800">
-            Narrative Nest Storyboard Maker Demo
+            Narrative Nest Movie Storyboard Maker Powered by AI Demo
             </h1>
           <h1 className="text-center text-1xl font-bold text-brown-800">
             Please generate your image/frame one by one since the Gradio API is limited
@@ -57,7 +57,7 @@ const Storyboard: React.FC = () => {
               type="text"
               value={basePrompt}
               onChange={(e) => setBasePrompt(e.target.value)}
-              placeholder="Enter base prompt to define your style"
+              placeholder="Enter base prompt to define your image style"
               className="w-full p-2 border rounded mb-2"
             />
           </div>

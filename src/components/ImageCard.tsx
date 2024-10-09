@@ -60,7 +60,7 @@ const ImageCard: React.FC<ImageCardProps> = ({ basePrompt }) => {
           <textarea
             value={prompt}
             onChange={(e) => setPrompt(e.target.value)}
-            placeholder="Type your imagination..."
+            placeholder="Type your imagination on this frame..."
             className="w-full p-2 border rounded resize-none bg-transparent text-black focus:outline-none h-20"
           />
           <button onClick={handleSubmit} className="text-gray-600 p-2">
@@ -73,7 +73,7 @@ const ImageCard: React.FC<ImageCardProps> = ({ basePrompt }) => {
           <textarea
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
-            placeholder="Shot Notes"
+            placeholder="Additional notes"
             className="w-full p-2 border rounded resize-none bg-transparent text-black focus:outline-none h-10"
           />
         </div>
